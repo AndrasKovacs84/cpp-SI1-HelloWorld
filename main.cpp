@@ -1,6 +1,11 @@
 #include <iostream>
 
+using namespace std;
+
 int main(int argc, char *argv[]) {
-    std::cout << "Hello World!" << std::endl;
+    string fullname;
+    cout << "What is your name? " << endl;
+    getline(cin, fullname);
+    cout << "Hello " + fullname << endl;
     return 0;
 }
